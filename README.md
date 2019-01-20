@@ -24,15 +24,21 @@ gcc gen_tour.c tsp_tools.c -o gen_tour
 gcc tour_to_plot.c tsp_tools.c -o tour_to_plot
 ```
 # How to use
-## Case 1
 Let `problem/tsp225.tsp` be a problem.
 
-Get initial tour.
+Get an initial tour by the nearest neighbor method.
 ```
 ./tsp_nn problem/tsp225.tsp 1
 ```
 The last argument `1` is an initial node index for the nearest neighbor method.
 The output is `a.tour`. It contains an order of the node indexes.
+
+Or get a tour randomly.
+```
+./gen_tour 225 1
+```
+The second `225` indicates the number of nodes of the condiering tour.
+The last `1` is a random seed.
 
 Get a tour by 3-opt
 ```
@@ -57,3 +63,5 @@ Plot the result by GNU plot
 ./tour_to_plot problem/tsp225.tsp a.tour
 gnuplot -p a.plt
 ```
+You see the following graph.
+<img src="tsp225.png" width="960">

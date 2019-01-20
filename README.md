@@ -1,5 +1,5 @@
 # Introduction
-This includes C codes of 2-opt and 3-opt methods for travel salesman problems.
+This includes C codes of 2-opt and 3-opt methods for [travel salesman problems](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
 
 # Compile
 ## 2-opt

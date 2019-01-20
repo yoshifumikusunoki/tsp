@@ -45,7 +45,7 @@ Compute a better tour by 3-opt
 ./tsp_3opt problem/tsp225.tsp a.tour
 ```
 The output is also `a.tour`.
-You see the following print in stdout.
+You see the following print in stdout during the 3-opt execution.
 ```
 27: diff = 1, obj = 3857 
 replace type = 2, replace pos = [108 109 128 129 110 111]
